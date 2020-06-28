@@ -1,0 +1,22 @@
+mkdir ticketing
+cd ticketing
+mkdir auth
+npm init -y
+npm i typescript ts-node-dev express @types/express
+tsc --init
+
+Dockerfile
+.dockerignore
+docker build -t rwoj/auth .
+
+--kubernets
+cd ..
+mkdir infra/k8s
+cd infra/k8s
+auth-depl.yaml 
+
+--skaffold
+install from skaffold.dev (via choco)
+
+skaffold.yaml --ticketing directory
+skaffold dev
