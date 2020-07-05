@@ -29,3 +29,10 @@ ingress-srv.yaml
 
 change on local machine the port in hosts
 c:\Windows\System32\drivers\etc\hosts
+
+k8s secret for jwt: 
+kubectl create secret generic jwt-secret --from-literal=JWT_KEY=asdf
+
+
+-testing 
+npm i --save-dev @types/jest @types/supertest jest ts-jest supertest mongodb-memory-server
