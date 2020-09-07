@@ -47,3 +47,18 @@ npm publish --access public
 
 tsc --init // like npm init
 
+npm version patch
+npm run build
+npm publish
+
+
+ticketing.dev - type thisisunsafe
+
+-- nas streaming testing
+npm i node-nats-streaming ts-node-dev typescript @types/node
+--changes in package.json - ts-node-dev...
+tsc --init
+
+--opening port
+kubectl get pods
+kubectl port-forward nats-depl-79d498bb98-zlbfg 4222:4222
