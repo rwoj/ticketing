@@ -3,10 +3,8 @@ import axios from "axios";
 const buildClient = ({ req }) => {
   if (typeof window === "undefined") {
     // We are on the server
-
     return axios.create({
-      baseURL:
-        "http://ingress-nginx-controller.ingress-nginx.svc.cluster.local",
+      baseURL: "rwoj-ticketing-app-prod.xyz",
       headers: req.headers,
     });
   } else {
@@ -16,5 +14,6 @@ const buildClient = ({ req }) => {
     });
   }
 };
+// "http://ingress-nginx-controller.ingress-nginx.svc.cluster.local",
 
 export default buildClient;
